@@ -1,0 +1,9 @@
+.App {
+    overflow: hidden;
+}
+
+.react-reveal{
+    animation-fill-mode: backwards !important;
+}
+
+

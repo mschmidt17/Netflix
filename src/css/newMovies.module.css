@@ -1,0 +1,166 @@
+.modal-backdrop.show {
+    opacity: var(--bs-backdrop-opacity);
+    z-index: -1;
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 740px;
+    height: 340px;
+    border-radius: 0;
+}
+
+.close{
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: -304px;
+    font-size: smaller;
+}
+
+.title{
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: var(--font-color);
+    margin: 8% 0 20% 0;
+    font-weight: 700;
+}
+
+.medio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--font-white);
+    background: transparent;
+    width: 180px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 7% 0;
+    color: var(--font-white);
+}
+
+.input::placeholder { 
+    color: var(--font-white); 
+    font-size: 14px;
+}
+
+.input:focus, .input:active{
+    color: var(--font-white);
+    border-bottom: 1px solid var(--font-white);
+    outline: 0;
+}
+
+.submit{
+    border: none;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.submit:active {
+    background-color: var(--font-white);
+}
+
+.addBtn{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    color: var(--font-white);
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+
+.addBtn:hover{
+    letter-spacing: 5px;
+}
+
+.iconPlus{
+    margin-right: 6px;
+    margin-bottom: 4px;
+    font-weight: lighter;
+}
+
+.img{
+    margin: 25% 0;
+}
+
+.close2{
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: -260px;
+    font-size: smaller;
+}
+
+.medio2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    margin: 6% 0;
+}
+
+.congrats{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8%;
+}
+
+.textCongrats{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+.smallScreen{
+    display: none;
+}
+
+.net{
+    font-size: 2rem;
+    color: var(--font-color);
+    letter-spacing: 1.3px;
+    margin-top: 6%;
+}
+
+/*----------------------RESPONSIVE----------------------*/
+
+@media (max-width: 502px) {
+    .bigScreen {
+        display: none;
+    }
+
+    .smallScreen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newModal{
+        display: flex;
+        flex-direction: column;
+        z-index: 1900;
+        width: 100%;
+        height: 100%;
+    }
+
+}

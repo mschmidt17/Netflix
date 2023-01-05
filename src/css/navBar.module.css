@@ -1,0 +1,97 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 1.5% 0;
+}
+
+.logo{
+    display: flex;
+    width: 10%;
+    justify-content: flex-start;
+}
+
+.agregar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+    justify-content: space-evenly;
+}
+
+.bellNotif{
+    position: relative;
+    top: 10px;
+    right: -14px;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    background: var(--font-color);
+}
+
+.bellIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 28%;
+}
+
+.profile{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.net{
+    font-size: 2.4rem;
+    color: var(--font-color);
+    letter-spacing: 1.3px;
+}
+
+/*----------------------RESPONSIVE----------------------*/
+
+@media (max-width: 820px) {
+    .navBar{
+        padding: 2.5% 0;
+    }
+
+    .navOptions{
+        width: 18%;
+    }
+
+    .agregar{
+        width: 62%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navOptions{
+        width: 0%;
+    }
+
+    .profile{
+        position: relative;
+        top: 0px;
+        right: 60px;
+    }
+
+    .agregar, .bellIcon, .bellNotif{
+        display: none;
+    }
+}

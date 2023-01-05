@@ -1,0 +1,167 @@
+.background, .container {
+    width: 210px;
+    height: 136px;
+    border-radius: 4px;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background{
+    margin: 4% 0; 
+}
+
+.container, .noHover, .noHoverMP, .circle, .cardHover:hover{
+    display: flex;
+}
+
+.container, .noHover{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container{
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.noHoverMP{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.circle{
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background: rgba(36, 36, 36, 0.5);
+    border: 1.5px solid var(--font-white);
+    border-radius: 20px;
+    font-weight: 300;
+    color: var(--font-white);
+    margin-bottom: 9%;
+}
+  
+.title{
+    margin-bottom: 3%;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cardHover{
+    display: none;
+    letter-spacing: 4px;
+}
+
+.icon{
+    color: var(--font-color);
+}
+
+/*---------------------- HOVER ----------------------*/
+
+.container:hover {
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.container:hover .noHover{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 86%;
+}
+
+.container:hover .cardHover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 84%;
+}
+
+.container:hover .circle{
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--font-white);
+    font-size: 20px;
+    margin-right: 4%;
+}
+
+.container:hover .noHoverMP{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 86%;
+    margin-bottom: 16%;
+}
+
+.container:hover .title{
+    text-align: start;
+}
+
+.circle:hover{
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    cursor: pointer;
+}
+
+.background:hover{
+    cursor: pointer;
+}
+
+.cardHover:hover{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*---------------------- RESPONSIVE ----------------------*/
+
+@media (max-width: 820px) {
+    .background, .container{
+        width: 636px;
+        height: 286px;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .noHoverMP{
+        margin-bottom: 0;
+    }
+
+    .container:hover{
+        justify-content: flex-end;
+    }
+
+    .container:hover .noHoverMP{
+        align-items: center;
+        width: 86%;
+        margin-bottom: 0;
+    }
+
+    .container:hover .cardHover{
+        margin-top: 6%;
+    }
+
+    .container:hover .circle{
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .background, .container{
+        width: 336px;
+        height: 186px;
+    }
+}

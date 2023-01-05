@@ -1,0 +1,116 @@
+.textLoading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.space{
+    margin-right: 2%;
+}
+
+.container{
+    padding: 6% 0 6% 4%;
+    letter-spacing: 3px;
+    border: 1px dashed var(--font-white);
+    width: 422px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.drop{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+
+.drop p{
+    margin-bottom: 0;
+}
+
+.icon{
+    font-size: 18px;
+    transform: rotate(-90deg);
+    margin-right: 2%;   
+}
+
+.barSuccess, .barFail{
+    height: 8px;
+    margin: 2% 0;
+    width: 400px;
+}
+
+.barFail{
+    background-color: #FF0000;
+}
+
+.barSuccess {
+    background-color: var(--font-color);
+}
+
+.textBar, .textBar1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.textBar {
+    color: var(--font-color);
+    font-weight: 300;
+}
+
+.textBar1{
+    color: var(--font-white);
+    cursor: pointer;
+}
+
+.pointerResponsive{
+    display: none;
+}
+
+/*----------------------RESPONSIVE----------------------*/
+
+@media (max-width: 500px) {
+    .textLoading{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        letter-spacing: 4px;
+        font-size: 12px;
+    }
+
+    .container{
+        width: 330px;
+        margin: 4% 0;
+        padding: 8% 4%;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .pointerResponsive{
+        display: flex;
+    }
+
+    .drop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .icon{
+        font-size: 16px;  
+    }
+    
+    .barSuccess, .barFail{
+        height: 6px;
+        width: 300px;
+    }
+
+}

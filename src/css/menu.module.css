@@ -1,0 +1,226 @@
+.menuBtn{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--font-white);
+}
+
+.background{
+    background-color: var(--bg-color);
+    padding-left: 1.5%;
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 0.5%;
+}
+
+
+.bellProfile{
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.bellNotif{
+    position: relative;
+    top: 10px;
+    right: -14px;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    background: var(--font-color);
+}
+
+.bellIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.profile{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+li{
+    margin: 2% 0;
+}
+
+li:hover{
+    color: var(--font-color);
+}
+
+.newMovies{
+    margin: 10% 0;
+}
+
+.smartphones, .logo{
+    display: none;
+}
+
+.net{
+    font-size: 1.8rem;
+    color: var(--font-color);
+    letter-spacing: 1.3px;
+    margin-top: 6%;
+}
+
+/*----------------------RESPONSIVE----------------------*/
+
+@media (max-width: 500px) {
+    .background{
+        width: 100% !important;
+    }
+
+    .logo{
+        display: flex;
+        margin-left: 20%;
+    }
+
+    .menuBtn{
+        position: relative;
+        top: 0px;
+        right: 344px;
+        transform: scaleX(-1);
+    }
+
+    .bellIcon, .bellNotif, .comun{
+        display: none;
+    }
+
+    .smartphones{
+        display: flex;
+        justify-content: center;
+    }
+
+    .addBtn{
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 4px;
+        display: flex;
+        align-items: center;
+        color: var(--font-white);
+        transition: 0.4s;
+        font-weight: 700;
+        margin: 5% 0;
+    }
+
+    .addBtn:hover{
+        letter-spacing: 5px;
+    }
+
+    .modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 12% 0;
+    }
+
+    .title{
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: var(--font-color);
+        margin: 8% 0 32% 0;
+        font-weight: 700;
+    }
+    
+    .medio, .medio2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .input{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--font-white);
+        background: transparent;
+        width: 250px;
+        text-align: center;
+        letter-spacing: 4px;
+        margin: 10% 0 22% 0;
+        color: var(--font-white);
+    }
+    
+    .input::placeholder { 
+        color: var(--font-white); 
+        font-size: 14px;
+    }
+    
+    .input:focus, .input:active{
+        color: var(--font-white);
+        border-bottom: 1px solid var(--font-white);
+        outline: 0;
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit {
+        border: none;
+        width: 250px;
+        height: 55px;
+        text-align: center;
+        color: var(--bg-color);
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-weight: 700;
+    }
+    
+    .submit:active {
+        background-color: var(--font-white);
+    }
+
+    .close{
+        border: 1px solid #928b8b88;
+        width: 250px;
+        height: 55px;
+        text-align: center;
+        color: var(--font-white);
+        background:transparent;
+        font-size: 15px;
+        letter-spacing: 4px;
+        margin-top: 10%;
+    }
+    
+    .medio2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 4px;
+        margin: 6% 0;
+    }
+    
+    .congrats{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 6%;
+        margin-top: 24%;
+    }
+    
+    .textCongrats{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 4% 12% 20% 12%;
+        text-align: center;
+    }
+
+    .submit2 {
+        text-decoration: none;
+        padding: 11px 88px;
+        text-align: center;
+        font-size: 20px;
+        color: var(--bg-color);
+        background-color: var(--font-white);
+    }
+}
