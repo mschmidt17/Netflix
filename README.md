@@ -1,4 +1,4 @@
-# Liteflix
+# NETFLIX
 
 Se trata de un proyecto que consiste en el desarrollo un Catálogo de Películas dinámico.
 
@@ -12,4 +12,4 @@ Para el diseño se siguio el prototipo de Figma, tanto para Desktop como para Mo
 
 
 
-## Link de proyecto:  https://liteflix-umber.vercel.app
+## Link de proyecto:  
