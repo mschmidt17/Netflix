@@ -10,6 +10,10 @@ La aplicacion se desarrollo utilizando React, JavaScript, HTML y CSS modules. Pa
 
 Para el diseño se siguio el prototipo de Figma, tanto para Desktop como para Mobile.
 
+<br></br>
+
+Cosas a mejorar: Uso de Bootstrap - Evitar repetir codigo.
+
 
 ![desktop1](https://user-images.githubusercontent.com/99290382/210804470-3c431406-eb93-4543-9dc7-9df82266ff45.png)
 <br></br>
