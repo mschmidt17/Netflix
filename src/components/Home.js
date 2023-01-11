@@ -5,7 +5,6 @@ import style from "../css/home.module.css";
 import {AiOutlinePlus} from "react-icons/ai";
 import {BsPlay} from "react-icons/bs";
 import { getPopularMovies, getFeaturedMovies } from "../assets/functions.js";
-import Fade from 'react-reveal/Fade';
 
 
 function Home() {
@@ -51,18 +50,12 @@ function Home() {
         <img src={`https://image.tmdb.org/t/p/original/${topMovie?.backdrop_path}`} alt="Top Movie" className={style.background}/>
         <main className={style.row}>
             <section className={style.homeLeft}>
-              <Fade top>
                 <h4 className={style.original}>ORIGINAL DE <b style={{"fontWeight":"700"}}>NETFLIX</b></h4>
-              </Fade>
-              <Fade left>
                 <span className={style.popular}>{topMovie.title}</span>
-              </Fade>
-              <Fade bottom>
                 <div className={style.btnHome}>
                   <button className={style.play}><BsPlay className={style.icon}/>REPRODUCIR</button>
                   <button className={style.list}><AiOutlinePlus className={style.plus}/> MI LISTA</button>
                 </div>
-              </Fade>
             </section>
 
             <section className={style.homeRight}>
@@ -75,9 +68,7 @@ function Home() {
 
             {popularMovies?.length > 0?
               popularMovies.map((movie) => 
-              <Fade top>
-                <Card key={movie.id || i++} movie={movie}/>
-              </Fade> )
+                <Card key={movie.id || i++} movie={movie}/>)
              :
               <p className={style.noFound}>NO <br/> SE ENCONTRARON <br/>PELICULAS</p>
             }
