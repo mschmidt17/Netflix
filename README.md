@@ -10,6 +10,8 @@ La aplicacion se desarrollo utilizando React, JavaScript, HTML y CSS modules. Pa
 
 Para el diseño se siguio el prototipo de Figma, tanto para Desktop como para Mobile.
 
+Probalo! https://netflix-lcwz.vercel.app/
+
 <br></br>
 
 Cosas a mejorar: Uso de Bootstrap - Evitar repetir codigo.
